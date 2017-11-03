@@ -31,7 +31,8 @@
 		type : 'GET',
 		dataType : 'xml',
 		success : function(res) {
-			tag = res.documentElement.outerHTML;
+			tag = res.responseText;
+			//tag = res.documentElement.outerHTML;
 			alert(tag);
 			console.log(tag);
 		}
